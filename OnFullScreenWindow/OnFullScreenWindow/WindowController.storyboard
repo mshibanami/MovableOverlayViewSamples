@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Obi-Mh-laM">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="eFA-zM-n7b">
+            <objects>
+                <windowController id="Obi-Mh-laM" customClass="WindowController" customModule="OnFullScreenWindow" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="hZM-8s-8oE" customClass="Window" customModule="OnFullScreenWindow" customModuleProvider="target">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                    </window>
+                    <connections>
+                        <segue destination="LOE-JG-eTm" kind="relationship" relationship="window.shadowedContentViewController" id="hBe-wb-j8x"/>
+                    </connections>
+                </windowController>
+                <customObject id="sZR-E4-nU0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qfU-Dv-AMA">
+            <objects>
+                <viewController id="LOE-JG-eTm" customClass="ViewController" customModule="OnFullScreenWindow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="zfk-JB-c09" customClass="View" customModule="OnFullScreenWindow" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="264"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-GD-i0f" customClass="ImageView" customModule="OnFullScreenWindow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="128" height="128"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="jUs-Fb-QzR"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LkC-GD-i0f" firstAttribute="top" secondItem="zfk-JB-c09" secondAttribute="top" id="5Hg-M0-XWE"/>
+                            <constraint firstItem="LkC-GD-i0f" firstAttribute="leading" secondItem="zfk-JB-c09" secondAttribute="leading" id="kce-Tt-MPi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LkC-GD-i0f" id="TfA-38-JZI"/>
+                        <outlet property="imageViewLeftSpacing" destination="kce-Tt-MPi" id="dgJ-Jp-BGH"/>
+                        <outlet property="imageViewTopSpacing" destination="5Hg-M0-XWE" id="PBv-Vu-zxv"/>
+                    </connections>
+                </viewController>
+                <customObject id="zvp-8k-cqJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="662"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
+</document>

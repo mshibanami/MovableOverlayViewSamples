@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:OnFullScreenWindow/OnFullScreenWindow.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SelfCalculation/SelfCalculation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SimpleWay/SimpleWay.xcodeproj">
+   </FileRef>
+</Workspace>
