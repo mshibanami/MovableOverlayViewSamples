@@ -43,7 +43,9 @@
 				285E894D1E3BA2200048A619 /* SimpleWay */,
 				285E894C1E3BA2200048A619 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		285E894C1E3BA2200048A619 /* Products */ = {
 			isa = PBXGroup;

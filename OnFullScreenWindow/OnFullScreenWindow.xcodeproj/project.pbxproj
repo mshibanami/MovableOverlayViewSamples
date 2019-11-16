@@ -45,7 +45,9 @@
 				288849F91E3BA30700AA5E6D /* OnFullScreenWindow */,
 				288849F81E3BA30700AA5E6D /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		288849F81E3BA30700AA5E6D /* Products */ = {
 			isa = PBXGroup;
