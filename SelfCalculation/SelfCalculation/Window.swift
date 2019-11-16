@@ -19,11 +19,11 @@ class Window: NSWindow
         }
     }
 
-    override init(contentRect: NSRect, styleMask aStyle: NSWindowStyleMask, backing bufferingType: NSBackingStoreType, defer flag: Bool) {
+    override init(contentRect: NSRect, styleMask aStyle: NSWindow.StyleMask, backing bufferingType: NSWindow.BackingStoreType, defer flag: Bool) {
         super.init(contentRect: contentRect, styleMask: aStyle, backing: bufferingType, defer: flag)
 
-        styleMask = [NSBorderlessWindowMask]
-        level = Int(CGWindowLevelForKey(CGWindowLevelKey.statusWindow))
+        styleMask = .borderless
+        level = .statusBar
         isOpaque = false
         backgroundColor = NSColor.green.withAlphaComponent(0.1)
     }
