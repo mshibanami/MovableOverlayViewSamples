@@ -12,7 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate
 {
     let windowController: WindowController!
-        = NSStoryboard(name: String(describing: WindowController.self), bundle: nil).instantiateInitialController() as! WindowController
+        = NSStoryboard(name: String(describing: WindowController.self), bundle: nil).instantiateInitialController()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         windowController.showWindow(nil)
