@@ -8,8 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController
-{
+class ViewController: NSViewController {
     @IBOutlet weak var imageView:            ImageView!
     @IBOutlet weak var imageViewLeftSpacing: NSLayoutConstraint!
     @IBOutlet weak var imageViewTopSpacing:  NSLayoutConstraint!
@@ -38,8 +37,7 @@ class ViewController: NSViewController
     }
 }
 
-class View: NSView
-{
+class View: NSView {
     override var isFlipped: Bool {
         get {
             return true
@@ -47,8 +45,7 @@ class View: NSView
     }
 }
 
-class ImageView: NSImageView
-{
+class ImageView: NSImageView {
     override var isFlipped: Bool {
         get {
             return true

@@ -8,8 +8,7 @@
 
 import Cocoa
 
-class WindowController: NSWindowController
-{
+class WindowController: NSWindowController {
     var viewController: NSViewController?
     var dragStartPoint: NSPoint?
 
@@ -29,8 +28,7 @@ class WindowController: NSWindowController
     override func mouseDragged(with event: NSEvent) {
         super.mouseDragged(with: event)
 
-        guard let window = window, let dragStartPoint = dragStartPoint else
-        {
+        guard let window = window, let dragStartPoint = dragStartPoint else {
             return
         }
 

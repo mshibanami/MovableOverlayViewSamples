@@ -9,8 +9,7 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate
-{
+class AppDelegate: NSObject, NSApplicationDelegate {
     let windowController: WindowController!
         = NSStoryboard(name: String(describing: WindowController.self), bundle: nil).instantiateInitialController()
 
